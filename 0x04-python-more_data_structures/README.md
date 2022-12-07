@@ -24,4 +24,10 @@
 
 12-roman_to_int.py - Converts a Roman numeral to an integer.
 
+100-weight_average.py - Returns the weighted average of all integers tuple (<score>, <weight>)
 
+101-square_matrix_map.py - Computes the square value of all integers of a matrix using [map].
+
+102-complex_delete.py - Deletes keys with a specific value in a dictionary.
+
+103-python.c - Prints some basic info about Python lists and Python bytes objects.
