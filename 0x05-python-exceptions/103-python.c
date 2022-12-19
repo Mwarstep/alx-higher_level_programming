@@ -1,4 +1,3 @@
-#include <Python.h>
 #include <stdlib.h>
 #include <object.h>
 #include <listobject.h>
