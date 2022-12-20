@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-"""Defining a class square."""
+"""Defining a class Square."""
 
-class square:
+
+class Square:
     """Repping a square."""
 
     def __init__(self, size=0, position=(0, 0)):
@@ -15,7 +16,7 @@ class square:
 
     @property
     def size(self):
-        """Sets the size of the square"""
+        """Sets the size of the square."""
         return (self.__size)
 
     @size.setter
