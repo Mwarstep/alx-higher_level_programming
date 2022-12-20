@@ -1,6 +1,6 @@
+#include <Python.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <Python.h>
 
 void print_python_float(PyObject *p)
 {
@@ -35,7 +35,7 @@ void print_python_bytes(PyObject *p)
 	size = ((PyVarObject *)p)->ob_size;
 	trying_str = ((PyBytesObject *)p)->ob_sval;
 	printf(" size: %lu\n", size);
-	printf(" trying string: %s\n", tyring_str);
+	printf(" trying string: %s\n", trying_str);
 	if (size < 10)
 		printf(" first %lu bytes:", size + 1);
 	else
