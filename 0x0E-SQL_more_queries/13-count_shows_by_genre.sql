@@ -1,5 +1,6 @@
--- Will list all genres from hbtn_0d_tvshows and displays the no. of shows linked to each
---Results will be sorted in descending order by no. of shows linked
+-- Will list all genres from hbtn_0d_tvshows and displays 
+-- the no. of shows linked to each
+-- Results will be sorted in descending order by no. of shows linked
 SELECT g.`name` AS `genre`,
 	COUNT(*) AS `number_of_shows`
   FROM `tv_genres` AS g
