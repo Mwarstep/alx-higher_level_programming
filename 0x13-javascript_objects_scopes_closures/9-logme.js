@@ -1,7 +1,7 @@
 #!/usr/bin/node
-let numArg = 0;
+let nArg = 0;
 
 exports.logMe = function (item) {
-  console.log(numArg + ': ' + item);
-  numArg++;
+  console.log(nArg + ': ' + item);
+  nArg++;
 }
