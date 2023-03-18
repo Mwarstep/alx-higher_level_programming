@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Containts Base and State class, the intstances of delarative_base()
+Contains Base and State class, the intstances of delarative_base()
 """
 from sqlalchemy import Column, Integer, String, MetaData
 from sqlalchemy.ext.declarative import declarative_base
@@ -8,7 +8,7 @@ from sqlalchemy.ext.declarative import declarative_base
 mymetadata = MetaData()
 Base = declarative_base(metadata=mymetadata)
 
-class State(base):
+class State(Base):
     """
     Class with ID and Name attributes of each state
     """
