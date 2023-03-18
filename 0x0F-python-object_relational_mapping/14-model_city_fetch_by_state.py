@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """ Prints the State object with name passed as arg from the DB """
 import sys
 from model_state import Base, State
