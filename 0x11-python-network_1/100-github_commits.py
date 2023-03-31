@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""Lists 10 commits, from the most recent to oldest, in a repository 
-of a user
+"""Lists 10 commits, from the most recent to oldest,
+in a repository of a user
 """
 from sys import argv
 import requests
