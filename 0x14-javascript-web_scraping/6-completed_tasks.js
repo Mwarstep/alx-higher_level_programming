@@ -2,24 +2,18 @@
 
 const request = require('request');
 
-const url = 'https://jsonplaceholder.typicode.com/todos';
-const completedTasksByUser = {};
-
-request(url, (error, response, body) => {
-  if (error) {
-    console.error(error);
-    return;
-  }
-
-  const tasks = JSON.parse(body);
-
-  tasks.forEach(task => {
-    if (task.completed) {
-      completedTasksByUser[task.userId] = (completedTasksByUser[task.userId] || 0) + 1;
+request(process.argv[2], function (err, response, body) {
+  if (err == null) {
+    const resp = {};
+    const json = JSON.parse(body);
+    for (let x = 0; x < json.length; x++) {
+      if (json[x].completed === true) {
+        if (resp[json[x].userId] === undefined) {
+          resp[json[x].userId] = 0;
+        }
+        resp[json[x].userId]++;
+      }
     }
-  });
-
-  Object.keys(completedTasksByUser).forEach(userId => {
-    console.log(`${userId}: ${completedTasksByUser[userId]}`);
-  });
+    console.log(resp);
+  }
 });
