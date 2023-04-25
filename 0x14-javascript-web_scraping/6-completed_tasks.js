@@ -20,6 +20,6 @@ request(url, (error, response, body) => {
   });
 
   Object.keys(completedTasksByUser).forEach(userId => {
-  console.log(`${userId}: ${completedTasksByUser[userId]}`);
+    console.log(`${userId}: ${completedTasksByUser[userId]}`);
   });
 });
