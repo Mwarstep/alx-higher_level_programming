@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Contains State Class and Base, an instance of declarative_base() """
+""" This contains State Class and Base, an instance of declarative_base() """
 
 from sqlalchemy import Column, Integer, String, MetaData
 from sqlalchemy.ext.declarative import declarative_base
