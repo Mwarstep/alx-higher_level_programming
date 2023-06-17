@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Will list all states from the database hbtn_0e_0_usa """
+""" This will list all states from the database hbtn_0e_0_usa """
 import MySQLdb
 import sys
 
