@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Will fetch the URL https://alx-intranet.hbtn.io/status"""
+"""This will fetch the URL https://alx-intranet.hbtn.io/status"""
 
 import urllib.request
 

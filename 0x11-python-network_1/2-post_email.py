@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Takes in a URL & Email, sends a POST request to the URK with the email
-as a parameter, and displays the body of the response (decoded in utf-8)
+as a parameter, and displays the body of the response (decoded in utf-8).
 """
 import sys
 import urllib.parse
