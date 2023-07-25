@@ -17,8 +17,9 @@ request(`https://swapi-api.alx-tools.com/api/films/${movieID}`, (error, response
         console.error(error);
         return;
       }
-      const character = JSON.parse(body);
-      console.log(character.name);
+      const char = JSON.parse(body);
+      console.log(char.name);
     });
   });
 });
+
