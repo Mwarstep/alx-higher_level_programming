@@ -22,4 +22,3 @@ request(`https://swapi-api.alx-tools.com/api/films/${movieID}`, (error, response
     });
   });
 });
-
